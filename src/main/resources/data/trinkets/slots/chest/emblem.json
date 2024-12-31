@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "amount": 1,
+  "order": 1,
+  "icon": "trinkets:gui/slots/charm",
+  "drop_rule": "keep",
+  "validator_predicates": "trinkets:tag",
+  "quick_mode_predicates": "trinkets:all",
+  "tooltip_predicates": "trinkets:all"
+}
