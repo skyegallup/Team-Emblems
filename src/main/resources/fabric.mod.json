@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "team_emblems",
+	"version": "${version}",
+	"name": "Team Emblems",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/team_emblems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.skyegallup.team_emblems.TeamEmblems"
+		],
+		"client": [
+			"com.skyegallup.team_emblems.TeamEmblemsClient"
+		]
+	},
+	"mixins": [
+		"team_emblems.mixins.json",
+		{
+			"config": "team_emblems.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
