@@ -1,7 +1,6 @@
 package com.skyegallup.team_emblems.util;
 
 import com.skyegallup.team_emblems.TeamEmblems;
-import com.skyegallup.team_emblems.config.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.scoreboard.Scoreboard;
