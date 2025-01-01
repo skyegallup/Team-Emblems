@@ -24,6 +24,10 @@ repositories {
 		name = "Ladysnake Libs"
 		url = 'https://maven.ladysnake.org/releases'
 	}
+	maven {
+		name = "Maven Central"
+		url = "https://repo1.maven.org/maven2/"
+	}
 }
 
 loom {
@@ -49,6 +53,8 @@ dependencies {
 
 	// Trinkets
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
+
+	implementation "org.tomlj:tomlj:1.1.1"
 }
 
 processResources {

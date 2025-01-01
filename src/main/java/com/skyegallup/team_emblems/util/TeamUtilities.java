@@ -1,6 +1,9 @@
 package com.skyegallup.team_emblems.util;
 
+import com.skyegallup.team_emblems.TeamEmblems;
+import com.skyegallup.team_emblems.config.Config;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.Team;
 import net.minecraft.world.World;
@@ -24,7 +27,14 @@ public class TeamUtilities {
 
         // Create and configure the team
         Team team = scoreboard.addTeam(newTeamName);
-        team.setFriendlyFireAllowed(false);  // TODO: add configurable team settings
+        team.setFriendlyFireAllowed(TeamEmblems.CONFIG.getFriendlyFire());
+        team.setShowFriendlyInvisibles(TeamEmblems.CONFIG.getSeeFriendlyInvisibles());
+        if (TeamEmblems.CONFIG.getCollideWithTeammates()) {
+            team.setCollisionRule(AbstractTeam.CollisionRule.ALWAYS);
+        } else {
+            team.setCollisionRule(AbstractTeam.CollisionRule.PUSH_OWN_TEAM);
+        }
+
         return team;
     }
 
