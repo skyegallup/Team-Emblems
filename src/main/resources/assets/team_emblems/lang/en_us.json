@@ -1,3 +1,6 @@
 {
+  "item.team_emblems.emblem": "Emblem",
+  "tooltip.team_emblems.team_name_set": "Team name: %s",
+  "tooltip.team_emblems.team_name_unset": "Team name: <set when crafted>",
   "trinkets.slot.chest.emblem": "Emblem"
 }
