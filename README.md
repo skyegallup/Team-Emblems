@@ -8,8 +8,6 @@ TODO: add logo
 disable friendly fire, and more through Minecraft's [built-in team system](https://minecraft.wiki/w/Commands/team)
 without commands. Team Emblems uses the [Trinkets mod](https://modrinth.com/mod/trinkets) for simplicity.
 
-TODO: add wiki
-
 # Installation Requirements
 
 Team Emblems requires [Fabric](https://fabricmc.net/) to use. The following Minecraft versions are supported:
@@ -18,7 +16,7 @@ Team Emblems requires [Fabric](https://fabricmc.net/) to use. The following Mine
 - (Planned) 1.21.1
 - (Planned) 1.21.4
 
-Team Emblems is currently a **work in progress** and cannot be downloaded from any platforms yet.
+Team Emblems is currently **in beta** and cannot be downloaded from any platforms yet.
 
 This mod depends on the [Trinkets mod](https://modrinth.com/mod/trinkets), version 3.7.2 or newer.
 
