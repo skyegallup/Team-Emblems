@@ -3,15 +3,15 @@
 	"id": "team_emblems",
 	"version": "${version}",
 	"name": "Team Emblems",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Fabric mod for setting teams using items.",
 	"authors": [
-		"Me!"
+		"skyebound (Skylar Gallup)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/skyegallup/Team-Emblems",
+		"sources": "https://github.com/skyegallup/Team-Emblems"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/team_emblems/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -26,9 +26,7 @@
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"trinkets": ">=3.7.2"
 	}
 }
