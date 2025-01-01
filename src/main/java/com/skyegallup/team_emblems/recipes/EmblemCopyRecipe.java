@@ -9,10 +9,11 @@ import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
-public class EmblemCraftRecipe extends SpecialCraftingRecipe {
-    public EmblemCraftRecipe(Identifier id, CraftingRecipeCategory category) {
+public class EmblemCopyRecipe extends SpecialCraftingRecipe {
+    public EmblemCopyRecipe(Identifier id, CraftingRecipeCategory category) {
         super(id, category);
     }
 
@@ -21,7 +22,7 @@ public class EmblemCraftRecipe extends SpecialCraftingRecipe {
         if (inventory.getWidth() == 3 && inventory.getHeight() == 3) {
             return inventory.getStack(1).isOf(Items.COPPER_INGOT)
                 && inventory.getStack(3).isOf(Items.COPPER_INGOT)
-                && inventory.getStack(4).isOf(Items.WHITE_WOOL)
+                && inventory.getStack(4).isOf(ModItems.EMBLEM)
                 && inventory.getStack(5).isOf(Items.COPPER_INGOT)
                 && inventory.getStack(7).isOf(Items.COPPER_INGOT);
         } else {
@@ -31,13 +32,9 @@ public class EmblemCraftRecipe extends SpecialCraftingRecipe {
 
     @Override
     public ItemStack craft(RecipeInputInventory inventory, DynamicRegistryManager registryManager) {
-        // Create new team for item
-        //Team team = TeamUtilities.createNewTeam()
-
-        // Create and return item
-        ItemStack itemStack = new ItemStack(ModItems.EMBLEM, 1);
-        //itemStack.setNbt();
-        return itemStack;
+        // Create a new item stack and duplicate the Emblem item
+        ItemStack existingEmblemStack = inventory.getStack(4);
+        return existingEmblemStack.copy();
     }
 
     @Override
@@ -46,7 +43,14 @@ public class EmblemCraftRecipe extends SpecialCraftingRecipe {
     }
 
     @Override
+    public DefaultedList<ItemStack> getRemainder(RecipeInputInventory inventory) {
+        DefaultedList<ItemStack> remainder = super.getRemainder(inventory);
+        remainder.set(4, inventory.getStack(4).copyWithCount(1));
+        return remainder;
+    }
+
+    @Override
     public RecipeSerializer<?> getSerializer() {
-        return ModRecipeSerializers.EMBLEM_CRAFT;
+        return ModRecipeSerializers.EMBLEM_COPY;
     }
 }

@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModRecipeSerializers {
-    public static final RecipeSerializer<EmblemCraftRecipe> EMBLEM_CRAFT = register("emblem_craft", new SpecialRecipeSerializer<>(EmblemCraftRecipe::new));
+    public static final RecipeSerializer<EmblemCopyRecipe> EMBLEM_COPY = register("emblem_copy", new SpecialRecipeSerializer<>(EmblemCopyRecipe::new));
 
     public static void initialize() {
         // pass

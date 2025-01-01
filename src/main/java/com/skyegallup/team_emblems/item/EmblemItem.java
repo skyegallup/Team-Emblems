@@ -60,10 +60,12 @@ public class EmblemItem extends TrinketItem {
     public void onCraft(ItemStack stack, World world, PlayerEntity player) {
         super.onCraft(stack, world, player);
 
-        // Create and set team
-        Team team = TeamUtilities.createNewTeam(world);
-        NbtCompound nbt = stack.getOrCreateNbt();
-        nbt.putString("team_name", team.getName());
+        // Create and set team if the stack doesn't already have a team (e.g. for the copy recipe)
+        if (!hasTeamName(stack)) {
+            Team team = TeamUtilities.createNewTeam(world);
+            NbtCompound nbt = stack.getOrCreateNbt();
+            nbt.putString("team_name", team.getName());
+        }
     }
 
     private static String getTeamName(ItemStack stack) {

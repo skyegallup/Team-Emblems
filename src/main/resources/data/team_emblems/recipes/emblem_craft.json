@@ -1,22 +1,4 @@
 {
-  "type": "team_emblems:emblem_craft",
-  "category": "equipment",
-  "show_notification": true,
-  "pattern": [
-    " C ",
-    "CWC",
-    " C "
-  ],
-  "key": {
-    "C": {
-      "item": "minecraft:copper_ingot"
-    },
-    "W": {
-      "item": "minecraft:white_wool"
-    }
-  },
-  "result": {
-    "count": 1,
-    "item": "team_emblems:emblem"
-  }
+  "type": "team_emblems:emblem_copy",
+  "category": "equipment"
 }
