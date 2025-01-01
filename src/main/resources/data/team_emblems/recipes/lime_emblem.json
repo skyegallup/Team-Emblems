@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "group": "team_emblems:emblems",
+    "show_notification": true,
+    "pattern": [
+        " C ",
+        "CWC",
+        " C "
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:copper_ingot"
+        },
+        "W": {
+            "item": "minecraft:lime_wool"
+        }
+    },
+    "result": {
+        "item": "team_emblems:lime_emblem"
+    }
+}
