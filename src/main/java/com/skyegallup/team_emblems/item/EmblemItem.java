@@ -50,10 +50,10 @@ public class EmblemItem extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
 
-//        // Remove player's team
-//        if (hasTeamName(stack)) {
-//            TeamUtilities.removeFromTeam(entity, getTeamName(stack));
-//        }
+        // Remove player's team
+        if (hasTeamName(stack)) {
+            TeamUtilities.removeFromTeam(entity, getTeamName(stack));
+        }
     }
 
     @Override
