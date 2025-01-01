@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "team_emblems:emblem"
+    "#team_emblems:emblems"
   ]
 }
