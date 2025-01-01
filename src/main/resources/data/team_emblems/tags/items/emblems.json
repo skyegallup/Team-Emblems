@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "team_emblems:black_emblem",
+    "team_emblems:blue_emblem",
+    "team_emblems:brown_emblem",
+    "team_emblems:cyan_emblem",
+    "team_emblems:gray_emblem",
+    "team_emblems:green_emblem",
+    "team_emblems:light_blue_emblem",
+    "team_emblems:light_gray_emblem",
+    "team_emblems:lime_emblem",
+    "team_emblems:magenta_emblem",
+    "team_emblems:orange_emblem",
+    "team_emblems:pink_emblem",
+    "team_emblems:purple_emblem",
+    "team_emblems:red_emblem",
+    "team_emblems:white_emblem",
+    "team_emblems:yellow_emblem"
+  ]
+}

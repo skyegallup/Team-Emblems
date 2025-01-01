@@ -2,6 +2,7 @@ package com.skyegallup.team_emblems;
 
 import com.skyegallup.team_emblems.item.ModItems;
 import com.skyegallup.team_emblems.recipes.ModRecipeSerializers;
+import com.skyegallup.team_emblems.tag.ModTags;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ public class TeamEmblems implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.initialize();
+		ModTags.initialize();
 		ModRecipeSerializers.initialize();
 	}
 }
