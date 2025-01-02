@@ -1,6 +1,6 @@
 # Team Emblems
 
-TODO: add logo
+![Team Emblems logo](src/main/resources/assets/team_emblems/icon.png)
 
 ![Platform: Fabric](https://img.shields.io/badge/platform-Fabric-%23dbb69b) ![Available for 1.20.1](https://img.shields.io/badge/available_for-1.20.1-forestgreen) ![MIT Licensed](https://img.shields.io/badge/license-MIT-blue)
 
