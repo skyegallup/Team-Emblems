@@ -17,9 +17,6 @@
 	"entrypoints": {
 		"main": [
 			"com.skyegallup.team_emblems.TeamEmblems"
-		],
-		"client": [
-			"com.skyegallup.team_emblems.TeamEmblemsClient"
 		]
 	},
 	"depends": {
