@@ -18,7 +18,9 @@ Team Emblems requires [Fabric](https://fabricmc.net/) to use. The following Mine
 
 Team Emblems is currently **in beta** and cannot be downloaded from any platforms yet.
 
-This mod depends on the [Trinkets mod](https://modrinth.com/mod/trinkets), version 3.7.2 or newer.
+This mod depends on the following mods:
+- [Fabric API](https://modrinth.com/mod/fabric-api), any version.
+- [Trinkets](https://modrinth.com/mod/trinkets), version 3.7.2 or newer.
 
 # Contributing
 
