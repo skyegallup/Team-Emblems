@@ -16,7 +16,7 @@ Team Emblems requires [Fabric](https://fabricmc.net/) to use. The following Mine
 - (Planned) 1.21.1
 - (Planned) 1.21.4
 
-Team Emblems is currently **in beta** and cannot be downloaded from any platforms yet.
+Team Emblems can be downloaded from Modrinth: https://modrinth.com/mod/team-emblems
 
 This mod depends on the following mods:
 - [Fabric API](https://modrinth.com/mod/fabric-api), any version.
