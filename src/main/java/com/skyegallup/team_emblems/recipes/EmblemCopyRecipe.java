@@ -14,8 +14,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
 public class EmblemCopyRecipe extends SpecialCraftingRecipe {
-    public EmblemCopyRecipe(Identifier id, CraftingRecipeCategory category) {
-        super(id, category);
+    public EmblemCopyRecipe(CraftingRecipeCategory category) {
+        super(category);
     }
 
     @Override

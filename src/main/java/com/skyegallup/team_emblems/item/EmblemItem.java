@@ -57,8 +57,8 @@ public class EmblemItem extends TrinketItem {
     }
 
     @Override
-    public void onCraft(ItemStack stack, World world, PlayerEntity player) {
-        super.onCraft(stack, world, player);
+    public void onCraft(ItemStack stack, World world) {
+        super.onCraft(stack, world);
 
         // Create and set team if the stack doesn't already have a team (e.g. for the copy recipe)
         if (!hasTeamName(stack)) {

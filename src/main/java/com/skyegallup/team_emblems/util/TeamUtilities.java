@@ -43,26 +43,26 @@ public class TeamUtilities {
         Team team = scoreboard.getTeam(teamName);
         if (team != null) {
             // Clear the player's existing team, if any
-            String entityName = entity.getEntityName();
-            Team existingTeam = scoreboard.getPlayerTeam(entityName);
+            String entityName = entity.getNameForScoreboard();
+            Team existingTeam = scoreboard.getTeam(entityName);
             if (existingTeam != null) {
-                scoreboard.removePlayerFromTeam(entityName, existingTeam);
+                scoreboard.removeScoreHolderFromTeam(entityName, existingTeam);
             }
 
             // Set the player's new team
-            scoreboard.addPlayerToTeam(entityName, team);
+            scoreboard.addScoreHolderToTeam(entityName, team);
         }
     }
 
     public static void removeFromTeam(LivingEntity entity, String teamName) {
         Scoreboard scoreboard = entity.getWorld().getScoreboard();
-        String entityName = entity.getEntityName();
+        String entityName = entity.getNameForScoreboard();
 
         // We need to check if the player actually has a team, since the game crashes otherwise
-        Team team = scoreboard.getPlayerTeam(entityName);
+        Team team = scoreboard.getScoreHolderTeam(entityName);
         if (team != null && team.getName().equals(teamName)) {
             try {
-                scoreboard.removePlayerFromTeam(entity.getEntityName(), team);
+                scoreboard.removeScoreHolderFromTeam(entity.getNameForScoreboard(), team);
             } catch (IllegalStateException ex) {
                 // Ignore duplicated team removals
             }
